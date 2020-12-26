@@ -8,7 +8,8 @@ class ModelTests(TestCase):
         email = "vkrisna65@gmail.com"
         password = "Testpass123"
 
-        # By default django have user model, so we need to custom our user model as our requirement at path core/models.py
+        # By default django have user model
+        # So we need to custom our user model as our requirement at path core/models.py
         user = get_user_model().objects.create_user(
             email=email,
             password=password
